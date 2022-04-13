@@ -51,11 +51,17 @@
 
 ### 차이점
 
-<DFS>
+**DFS**
 
 - 재귀 호출 이나 스택 사용
 - 재귀 호출로 인한 시간 소모 높음
 - **지나온 경로를 알아야 할 때 주로 사용**
+
+**BFS**
+
+- 큐 사용
+- 다음에 방문할 정점 저장으로 인한 메모리 소모
+- **최단 거리를 구할 때 주로 사용**
 
 ### 예시 코드
 
@@ -77,7 +83,7 @@ const graph = {
 ![5](https://user-images.githubusercontent.com/67372977/163217324-a69ff084-0f8a-434c-9d6b-f0ef9e8eef43.png)
 
 
-**<DFS>**
+**DFS**
 
 ```jsx
 let visited = [];
@@ -116,7 +122,7 @@ const dfs = (graph, startNode) => {
 };
 ```
 
-**<BFS>**
+**BFS**
 
 ```jsx
 const bfs = (graph, startNode) => {
