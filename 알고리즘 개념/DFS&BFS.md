@@ -18,12 +18,8 @@
 3. 더 이상 방문할 수 있는 정점이 없는 경우, 현재 정점의 이전 정점으로 돌아간다.
 4. 모든 정점을 방문할 때까지 2~3을 반복한다.
     
-    
-
-![스크린샷 2022-04-12 오후 4.11.08.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2d83dd3d-016d-47fd-b154-70dec4cc7c30/스크린샷_2022-04-12_오후_4.11.08.png)
-
-![스크린샷 2022-04-12 오후 4.10.26.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/90be3175-721e-4348-bb67-7bf9ac272c81/스크린샷_2022-04-12_오후_4.10.26.png)
-
+![1](https://user-images.githubusercontent.com/67372977/163217182-62c1eb1f-17b5-4657-bd2e-ab3678d4e96a.png)
+![2](https://user-images.githubusercontent.com/67372977/163217237-cb86aef8-ab37-4ee7-898e-0ef88eb309ee.png)
 ---
 
 ### 너비 우선 탐색 (BFS - Breadth First Search)
@@ -39,9 +35,10 @@
 3. v 중 가장 먼저 방문한 이웃한 정점으로 이동한다.
 4. 모든 정점을 방문할 때까지 2~3을 반복한다.
 
-![스크린샷 2022-04-12 오후 5.07.01.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eedcdb75-b932-42d2-86e3-8929ed9e50be/스크린샷_2022-04-12_오후_5.07.01.png)
 
-![스크린샷 2022-04-12 오후 5.13.35.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0398c237-1912-4be1-b283-abf03e4e2e8d/스크린샷_2022-04-12_오후_5.13.35.png)
+![3](https://user-images.githubusercontent.com/67372977/163217285-dde2b5ee-b62c-410e-b912-1b2da5144322.png)
+![4](https://user-images.githubusercontent.com/67372977/163217296-33736813-87f1-474a-9b77-ba77bc479450.png)
+
 
 ---
 
@@ -77,7 +74,8 @@ const graph = {
 };
 ```
 
-![스크린샷 2022-04-13 오후 5.42.23.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b2abee40-6ce6-46bf-b49f-b477692b22ea/스크린샷_2022-04-13_오후_5.42.23.png)
+![5](https://user-images.githubusercontent.com/67372977/163217324-a69ff084-0f8a-434c-9d6b-f0ef9e8eef43.png)
+
 
 **<DFS>**
 
