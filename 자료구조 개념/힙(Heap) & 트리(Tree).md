@@ -1,7 +1,5 @@
 ## Heap
 
----
-
 - 힙은 일종의 완전 이진 트리이다.
 - 힙은 최대 힙과 최소 힙으로 구분될 수 있다.
 - 최대 힙은 모든 부모 노드의 값이 자식 노드의 값보다 큰 힙을 말하고, 최소 힙은 그 반대 이다.
@@ -52,6 +50,7 @@ heappush(value) {
 }
 ```
 
+
 ### 삭제
 
 - 힙에서는 최소힙이든 최대힙이든 루트노드가 항상 먼저 배출되어야 한다.
@@ -93,9 +92,8 @@ heappop() {
 }
 ```
 
-## Tree
 
----
+## Tree
 
 ![tree](https://pale-freighter-43a.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ffee0a457-fe70-41d5-bc9b-38baac74644f%2F%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-04-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.01.23.png?table=block&id=438fc8d2-b384-403a-8e4c-9704b73ccb9a&spaceId=07c9824f-8fb4-4d32-b4e1-f618c474c29f&width=860&userId=&cache=v2)
 
@@ -160,14 +158,17 @@ class Tree {
 - full binary tree, complete binary tree, perfect binary tree로 나뉜다.
   - full binary tree
     ![full_binary_tree](https://pale-freighter-43a.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb1358026-0bcd-4d28-83d7-b5ad422a804d%2F%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-04-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_7.31.59.png?table=block&id=211470d8-97b0-420d-bbc4-2c31ffdb75ea&spaceId=07c9824f-8fb4-4d32-b4e1-f618c474c29f&width=580&userId=&cache=v2)
+
     - 각 노드가 0개 or 2개의 자식 노드를 갖는 경우
   - complete binary tree
     ![complete_binary_tree](https://pale-freighter-43a.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb1358026-0bcd-4d28-83d7-b5ad422a804d%2F%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-04-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_7.31.59.png?table=block&id=211470d8-97b0-420d-bbc4-2c31ffdb75ea&spaceId=07c9824f-8fb4-4d32-b4e1-f618c474c29f&width=580&userId=&cache=v2)
+
     - 마지막 레벨을 제외하고 모든 노드가 가득 차있는 경우
     - 마지막 레벨에서는 가장 왼쪽부터 채워지는 형태
     - **힙(Heap)은 완전 이진 트리의 일종이다.**
   - perfect binary tree
     ![full_binary_tree](https://pale-freighter-43a.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F291fdf5d-a3e3-4a6f-848e-2bd1492c4ed9%2F%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-04-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_7.34.45.png?table=block&id=8a2483c1-864c-498f-97e7-bd3a1d4a68e8&spaceId=07c9824f-8fb4-4d32-b4e1-f618c474c29f&width=580&userId=&cache=v2)
+
     - full binary tree 이면서 complete binary tree인 경우
     - 모든 리프 노드의 레벨이 동일하고, 모든 레벨이 가득 채워져 있어야 한다.
 
@@ -181,12 +182,13 @@ class BinarySearchTree {
 }
 ```
 
-- 참고자료
-  [Binary Tree 종류 - Heap 구현 사전지식](https://yaboong.github.io/data-structures/2018/02/10/1_binary-tree-1/)
-  [https://velog.io/@porupit0122/JavaScript-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-4-%ED%8A%B8%EB%A6%AC](https://velog.io/@porupit0122/JavaScript-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-4-%ED%8A%B8%EB%A6%AC)
-  [[javascript] tree , 트리의 탐색 (2)](https://hokeydokey.tistory.com/69)
-  [https://velog.io/@longroadhome/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-JS%EB%A1%9C-%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94-HEAP](https://velog.io/@longroadhome/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-JS%EB%A1%9C-%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94-HEAP)
-- 문제
-  [1927번: 최소 힙](https://www.acmicpc.net/problem/1927)
-  [11279번: 최대 힙](https://www.acmicpc.net/problem/11279)
-  [11286번: 절댓값 힙](https://www.acmicpc.net/problem/11286)
+- 참고자료</br>
+  [Binary Tree 종류 - Heap 구현 사전지식](https://yaboong.github.io/data-structures/2018/02/10/1_binary-tree-1/) </br>
+  [https://velog.io/@porupit0122/JavaScript-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-4-%ED%8A%B8%EB%A6%AC](https://velog.io/@porupit0122/JavaScript-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-4-%ED%8A%B8%EB%A6%AC)</br>
+  [[javascript] tree , 트리의 탐색 (2)](https://hokeydokey.tistory.com/69)</br>
+  [https://velog.io/@longroadhome/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-JS%EB%A1%9C-%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94-HEAP](https://velog.io/@longroadhome/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-JS%EB%A1%9C-%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94-HEAP)</br>
+
+- 문제</br>
+  [1927번: 최소 힙](https://www.acmicpc.net/problem/1927)</br>
+  [11279번: 최대 힙](https://www.acmicpc.net/problem/11279)</br>
+  [11286번: 절댓값 힙](https://www.acmicpc.net/problem/11286)</br>
