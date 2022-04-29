@@ -4,8 +4,7 @@ const input = fs.readFileSync(file).toString().trim().split('\n');
 
 const [n, ...arr] = input;
 let answer = 0;
-const schedule = arr.map((num) => num.split(' ') // [시작 시간, 끝나는 시간] 형태의 배열로 회의 시간 표현
-                      .map((num)=> +num))
+const schedule = arr.map((num) => num.split(' ').map(Number)) // [시작 시간, 끝나는 시간] 형태의 배열로 회의 시간 표현
                     .sort((a,b) => a[1] === b[1] ? a[0] - b[0] : a[1] - b[1]); // 시작 시간 비교도 중요함
 
 let finish = -1;
